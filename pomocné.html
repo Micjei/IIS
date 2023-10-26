@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #12476c;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #0078B9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.left-header {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 50px;
+    margin-right: 10px;
+}
+
+.left-sidebar {
+    background-color: #00A2E8; /* Zelená barva na levé straně */
+    padding: 10px;
+    max-width: 20%; /* Šířka levého panelu */
+    min-height: 100vh; /* Rozkládá se až dolů po konec stránky */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.left-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.left-sidebar li {
+    margin: 5px 0;
+    text-align: center;
+}
+
+.left-sidebar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.search-bar {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar input {
+    width: 100%;
+    max-width: 50%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.right-header {
+    display: flex;
+    align-items: center;
+}
+
+.user-profile img {
+    max-width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-info p {
+    margin: 0;
+}
+
+.user-info a {
+    color: #888;
+    text-decoration: none;
+}
+
+.user-links {
+    display: flex;
+    flex-direction: column;
+}
