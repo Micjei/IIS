@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil uživatele</title>
+    <link rel="stylesheet" href="style_uzivatel.css">
+</head>
+<body>
+    <div class="user-profile-container">
+        <div class="user-profile-page">
+            <div class="nvmr-button">
+                <a href="main_page.html">NVMR</a>
+            </div>
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </div>
+            <div class="profile-settings">
+                <h3>Nastavení profilu</h3>
+                <ul>
+                    <li><a href="#">Změnit heslo</a></li>
+                    <li><a id="changeImage" href="#">Změnit obrázek</a></li>
+                    <li><a id="changeDescription" href="#">Změnit popis</a></li>
+                    <li><a href="#">Změnit uživatelské jméno</a></li>
+                </ul>
+            </div>
+            <div class="user-info">
+                <div class="user-avatar">
+                    <img src="images/logo.png" alt="Profilová fotka">
+                </div>
+                <h2>Uživatelské jméno</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui sapiente odio dolore aspernatur accusamus aliquam sunt nam tempora non nihil labore reprehenderit, id eos debitis molestiae doloribus sint ex vitae.
+                </p>
+            </div>
+        </div>
+    </div>    
+
+    <input type="file" id="uploadImage" accept="image/*">
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Změnit popis</h2>
+            <textarea id="descriptionInput" rows="4" cols="50"></textarea>
+            <button id="saveDescription">Uložit</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
